@@ -1,0 +1,36 @@
+{
+  "en": {
+    "profession": "Software developer",
+    "greet": "Hello, I'm",
+    "i": "I'm a software developer oriented to web development.",
+    "aboutMe": "About me",
+    "me": [
+      "I'm a software programmer.",
+      "In September 2019, I joined to a school of computer science and software development I started the 'Software Foundations' program, which I finished on June 2020, then I started the specialization in 'Full-Stack Web Development' that I completed on May 2021.",
+      "In April of 2021 I started to work as software developer.",
+      "I have been part of some software development teams and I have collaborated on projects using different languages like 'C', 'Python', 'SQL', 'Java' and 'JavaScript'; using technologies like 'Git', 'Docker', 'Sergey SSG', 'Svelte', 'Vue', 'React', 'Angular', 'Node', 'TypeScript', among others.",
+      "I'm currently working for an excellent company.",
+      "Found a bug or have an idea? Contact me."
+    ],
+    "copyright": "All right reserved.",
+    "lang": "en",
+    "oppositeLang": "es"
+  },
+  "es": {
+    "profession": "Desarrollador de software",
+    "greet": "Hola, Soy",
+    "i": "soy desarrollador de software orientado al desarrollo web.",
+    "aboutMe": "Acerca de mí",
+    "me": [
+      "Soy programador de software.",
+      "En Septiembre de 2019 me uní a una escuela de ciencias de la computación y desarrollo de software e inicié el programa 'Fundamentos de Software' el cual finalicé en Junio de 2020, enseguida inicié la especialización en 'Desarrollo Web Full-Stack' la cual completé en Mayo de 2021.",
+      "En Abril de 2021 inicié mi actividad laboral como desarrollador de software.",
+      "He integrado equipos de desarrollo de software y colaborado en proyectos usando diferentes lenguajes como 'C', 'Python', 'SQL', 'Java', y 'JavaScript'; haciendo uso de tecnologías como 'Git', 'Docker', 'Sergey SSG', 'Svelte', 'Vue', 'React', 'Angular', 'Node', 'TypeScript',  entre otras.",
+      "Actualmente trabajo para una excelente compañía.",
+      "¿Encontró un error o tiene una idea? Contácteme."
+    ],
+    "copyright": "Reservados todos los derechos.",
+    "lang": "es",
+    "oppositeLang": "en"
+  }
+}

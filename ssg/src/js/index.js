@@ -51,9 +51,9 @@ function setContents() {
   $me.innerHTML = html;
   $copyright.textContent = texts.copyright;
 }
-setContents();
 
 (() => {
   $btnLang.addEventListener('click', toggleLang);
   $btnTheme.addEventListener('click', toggleTheme);
+  setContents();
 })();

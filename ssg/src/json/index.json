@@ -14,7 +14,11 @@
     ],
     "copyright": "All right reserved.",
     "lang": "en",
-    "oppositeLang": "es"
+    "oppositeLang": "es",
+    "notes": {
+      "title": "Notes",
+      "subtitle": "This content is available only in English."
+    }
   },
   "es": {
     "profession": "Desarrollador de software",
@@ -31,6 +35,10 @@
     ],
     "copyright": "Reservados todos los derechos.",
     "lang": "es",
-    "oppositeLang": "en"
+    "oppositeLang": "en",
+    "notes": {
+      "title": "Notas",
+      "subtitle": "Este contenido está disponible únicamente en inglés."
+    }
   }
 }

@@ -27,6 +27,7 @@
   --fw-light: 300;
   --fw-base: 400;
   --fw-bold: 500;
+  --fw-bolder: 700;
   --fs-xl: 2rem;
   --fs-l: 1.75rem;
   --fs-base: 1.5rem;
@@ -44,6 +45,8 @@ html {
 *,
 *:before,
 *:after {
+  margin: 0;
+  padding: 0;
   box-sizing: inherit;
 }
 body {
@@ -79,11 +82,16 @@ img {
 }
 /* 4. HEADINGS
   ============================= */
-.title {
+.fullname {
   margin: 0;
   font-size: 1px;
   font-weight: var(--fw-tiny);
   color: transparent;
+}
+.title {
+  font-size: var(--fs-xl);
+  font-weight: var(--fw-bolder);
+  text-align: center;
 }
 .subtitle {
   font-size: var(--fs-l);

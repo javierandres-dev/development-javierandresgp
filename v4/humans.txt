@@ -1,6 +1,7 @@
-/* Javier Andrés GP - https://javierandresgp.com */
-
+/* Author */
 Software Developer: Javier Andrés Garzón Patarroyo
+Web page: https://javierandresgp.com
+Description: Personal web page
 Contact: info [at] javierandresgp.com
 GitHub: https://github.com/javierandresgp
 LinkedIn: https://linkedin.com/in/javierandresgp

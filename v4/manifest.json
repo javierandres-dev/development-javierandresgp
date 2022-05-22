@@ -1,7 +1,7 @@
 {
-  "name": "",
-  "short_name": "",
-  "description": "",
+  "name": "javierandresgp.com",
+  "short_name": "javierandresgp",
+  "description": "prsonal web page",
   "background_color": "#1f1f1f",
   "theme_color": "#fb6d43",
   "orientation": "portrait",
@@ -11,7 +11,7 @@
   "lang": "en",
   "icons": [
     {
-      "src": "./img/favicon.png",
+      "src": "./assets/favicon.png",
       "type": "image/png",
       "sizes": "1024x1024",
       "purpose": "any maskable"

@@ -1,7 +1,7 @@
 'use strict';
 const d = window.document,
   lang = window.navigator.language,
-  res = await fetch('../json/index.json'),
+  res = await fetch('./assets/index.json'),
   allTexts = await res.json(),
   $body = d.querySelector('body'),
   $footer = d.querySelector('footer'),
@@ -42,7 +42,7 @@ function setContents() {
     else html += `<p>${item}</p>`;
   });
 
-  $btnLang.innerHTML = `<img src="./img/flag-${texts.oppositeLang}.png" alt="flag" class='btn-flag'>`;
+  $btnLang.innerHTML = `<img src="./assets/flag-${texts.oppositeLang}.png" alt="flag" class='btn-flag'>`;
   $btnTheme.textContent = theme === 'light' ? '🌙' : '☀️';
   $profession.textContent = texts.profession;
   $greet.textContent = texts.greet;
@@ -51,9 +51,9 @@ function setContents() {
   $me.innerHTML = html;
   $copyright.textContent = texts.copyright;
 }
-setContents();
 
 (() => {
   $btnLang.addEventListener('click', toggleLang);
   $btnTheme.addEventListener('click', toggleTheme);
+  setContents();
 })();

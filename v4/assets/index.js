@@ -1,8 +1,6 @@
 'use strict';
 const d = window.document,
   lang = window.navigator.language,
-  res = await fetch('./assets/index.json'),
-  allTexts = await res.json(),
   $body = d.querySelector('body'),
   $footer = d.querySelector('footer'),
   $btnLang = d.getElementById('btnLang'),
@@ -14,11 +12,15 @@ const d = window.document,
   $me = d.getElementById('me'),
   $copyright = d.getElementById('copyright');
 
-let texts = null,
-  theme = 'light',
-  oppositeTheme = 'dark';
+let allTexts = null,
+  texts = null,
+  theme = null,
+  oppositeTheme = null;
 
-lang.startsWith('es') ? (texts = allTexts.es) : (texts = allTexts.en);
+const toggleLang = () => {
+  texts.lang === 'es' ? (texts = allTexts.en) : (texts = allTexts.es);
+  setContents();
+};
 
 const toggleTheme = () => {
   theme === 'light'
@@ -29,12 +31,7 @@ const toggleTheme = () => {
   $footer.classList.toggle('dark');
 };
 
-const toggleLang = () => {
-  texts.lang === 'es' ? (texts = allTexts.en) : (texts = allTexts.es);
-  setContents();
-};
-
-function setContents() {
+const setContents = () => {
   let html = '';
   const last = texts.me.length - 1;
   texts.me.forEach((item, i) => {
@@ -50,9 +47,14 @@ function setContents() {
   $aboutMe.textContent = texts.aboutMe;
   $me.innerHTML = html;
   $copyright.textContent = texts.copyright;
-}
+};
 
-(() => {
+(async () => {
+  const res = await fetch('./assets/index.json');
+  allTexts = await res.json();
+  lang.startsWith('es') ? (texts = allTexts.es) : (texts = allTexts.en);
+  theme = 'light';
+  oppositeTheme = 'dark';
   $btnLang.addEventListener('click', toggleLang);
   $btnTheme.addEventListener('click', toggleTheme);
   setContents();

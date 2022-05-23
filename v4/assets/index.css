@@ -54,7 +54,7 @@ body {
   font-family: var(--ff-base);
   font-size: var(--fs-base);
   font-weight: var(--fw-base);
-  line-height: 1.6;
+  line-height: 1.75;
 }
 a:link {
   text-decoration: none;
